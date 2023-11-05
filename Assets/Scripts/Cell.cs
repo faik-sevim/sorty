@@ -63,6 +63,7 @@ public class Cell : MonoBehaviour, IPointerClickHandler, IDragHandler, IBeginDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
+
         Vector3 dragVectorDirection = (eventData.position - eventData.pressPosition).normalized;
         DraggedDirection direction = GetDragDirection(dragVectorDirection);
         switch (direction)

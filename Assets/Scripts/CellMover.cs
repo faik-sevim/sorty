@@ -65,6 +65,7 @@ public class CellMover : MonoBehaviour
                     }
 
                     gameManager.DecrementMoveCounter();
+                   
                 }));
                 break;
 
@@ -125,7 +126,7 @@ public class CellMover : MonoBehaviour
                 }));
                 break;
 
-            // "Up" hareketi için durum kontrolü
+
             case "Up":
                 // Eðer seçili kutucuk (cell) þuanki sýrasýnda en üstte deðilse
                 if (currentIndex > 0)
